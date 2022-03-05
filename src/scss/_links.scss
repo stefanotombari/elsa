@@ -16,7 +16,7 @@
 .default-links a:focus,
 .link:hover,
 .link:focus {
-    color: $link-hover-color;
+    text-decoration: overline;
 }
 
 .default-links a:active,
