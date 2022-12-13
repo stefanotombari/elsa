@@ -34,6 +34,33 @@ body {
     -moz-osx-font-smoothing: grayscale; // [1]
 }
 
+.header {
+    position: fixed;
+    z-index: 9;
+    right: 50%;
+    top: 45px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    margin-bottom: 40px;
+    background: #fff;
+
+    @media screen and (max-width: $breakpoint--sm) {
+        top: 32px;
+    }
+
+    .logo {
+        width: 70px;
+
+        @media screen and (max-width: $breakpoint--sm) {
+            width: 45px;
+        }
+    }
+
+    
+}
+
+
 // Remove text-shadow in selection highlight: h5bp.com/i
 // These selection rule sets have to be separate.
 ::-moz-selection {
